@@ -14,7 +14,12 @@
    @media(max-width: 520px){
       max-width: 520px;
       width: 100%;
-      height: 1005px;
+      height: 935px;
+   }
+   @media(max-width: 410px){
+      max-width: 410px;
+      width: 100%;
+      height: 685px;
    }
    .header-wrapper{
       display: flex;
@@ -26,22 +31,19 @@
          height: 143px;
       }
       @media(max-width: 520px){
-         height: 120px;
+         height: 100px;
       }
       .header-container{
          display: flex;
-         max-width: 1240px;
-         width: 100%;
+         width: 86.12%;
          align-items: center;
          height: 52px;
          justify-content: space-between;
          @media(max-width: 768px){
-            max-width: 706px;
-            width: 100%;
+            width: 86.12%;
          }
          @media(max-width: 520px){
-            max-width: 480px;
-            width: 100%;
+            width: 86.12%;
          }
          .header-logo-container{
             display: flex;
@@ -82,7 +84,10 @@
          height: 973px;
       }
       @media(max-width: 520px){
-         height: 905px;
+         height: 825px;
+      }
+      @media(max-width: 410px){
+         height: 625px;
       }
       .content-container{
          display: flex;
@@ -109,7 +114,11 @@
             @media(max-width: 520px){
                max-width: 480px;
                height: 160px;
-               margin-bottom: 20px;
+               margin-bottom: 0px;
+            }
+            @media(max-width: 410px){
+               max-width: 410px;
+               height: 130px;
             }
             .title{
                display: flex;
@@ -174,7 +183,12 @@
             @media(max-width: 520px){
                max-width: 520px;
                width: 100%;
-               height: 644px;
+               height: 586px;
+            }
+            @media(max-width: 410px){
+               max-width: 410px;
+               width: 100%;
+               height: 497px;
             }
             .description-inPic{
                display: none;
@@ -194,11 +208,11 @@
                }
                @media(max-width: 520px){
                   margin-left: 20px;
-                  font-size: 28px;
-                  max-width: 220px;
-                  line-height: 32px;
+                  font-size: 22px;
+                  max-width: 200px;
+                  line-height: 28px;
                   width: 100%;
-                  height: 95px;
+                  height: 90px;
                }
             }
             img{
