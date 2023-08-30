@@ -17,6 +17,8 @@ function OwlBlock (){
          </div>
          <div className="owl-picture">
             <img src={owl} alt='owl' />
+            <img src={ellipseOne} alt='ellipse' className='ellipse-one' />
+            <img src={ellipseTwo} alt='ellipse' className='ellipse-two' />
          </div>
          <div className='info-container'>
             <div className='text'>Сутажные украшения, изготовленные из шелкового шнура
