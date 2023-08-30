@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Onyx-landing/static/css/main.4d8589ff.css",
+    "main.js": "/Onyx-landing/static/js/main.ec2d9ce0.js",
+    "static/media/img_1.png": "/Onyx-landing/static/media/img_1.dc53581ce53881c7265d.png",
+    "static/media/fb_logo.jpg": "/Onyx-landing/static/media/fb_logo.6358e2a6b60a58cbeef0.jpg",
+    "index.html": "/Onyx-landing/index.html",
+    "main.4d8589ff.css.map": "/Onyx-landing/static/css/main.4d8589ff.css.map",
+    "main.ec2d9ce0.js.map": "/Onyx-landing/static/js/main.ec2d9ce0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d8589ff.css",
+    "static/js/main.ec2d9ce0.js"
+  ]
+}
