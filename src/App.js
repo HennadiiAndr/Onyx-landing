@@ -1,5 +1,6 @@
 import FirstScreen from './components/first-screen';
 import OwlBlock from './components/owl-block';
+import ProductBlockOne from './components/products-block-one';
 import './styles/app-styles.scss';
 
 function App(){
@@ -8,6 +9,7 @@ function App(){
          <div className="mainflow">
             <FirstScreen />
             <OwlBlock />
+            <ProductBlockOne />
          </div>
       </div>
    );
