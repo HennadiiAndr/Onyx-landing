@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Onyx-landing/static/css/main.3f5b4a52.css",
+    "main.css": "/Onyx-landing/static/css/main.f62fb78e.css",
     "main.js": "/Onyx-landing/static/js/main.9efbbdc2.js",
     "static/media/img_2.png": "/Onyx-landing/static/media/img_2.5ef315f6e3779babb542.png",
     "static/media/img_1.png": "/Onyx-landing/static/media/img_1.dc53581ce53881c7265d.png",
     "static/media/fb_logo.jpg": "/Onyx-landing/static/media/fb_logo.6358e2a6b60a58cbeef0.jpg",
     "index.html": "/Onyx-landing/index.html",
-    "main.3f5b4a52.css.map": "/Onyx-landing/static/css/main.3f5b4a52.css.map",
+    "main.f62fb78e.css.map": "/Onyx-landing/static/css/main.f62fb78e.css.map",
     "main.9efbbdc2.js.map": "/Onyx-landing/static/js/main.9efbbdc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f5b4a52.css",
+    "static/css/main.f62fb78e.css",
     "static/js/main.9efbbdc2.js"
   ]
 }
