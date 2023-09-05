@@ -7,7 +7,9 @@ function ProductBlockOne () {
       <div className='productBlockOne-wrapper'>
          <div className='products-container'>
             {ProductsData.map((product)=>{
-               return <ProductCard image={product.image} text={product.text} key={product.id} />
+               if(product.id <= 3){
+                  return <ProductCard image={product.image} text={product.text} key={product.id} />
+               }
             })}
          </div>
       </div>

@@ -1,5 +1,4 @@
 import ellipse from '../assets/ellipse_1.png';
-import facebook from '../assets/fb_logo.jpg';
 import instagram from '../assets/instagram_logo.png';
 import whatsup from '../assets/whatsup_logo.png';
 import picOne from '../assets/img_1.png';
@@ -17,7 +16,6 @@ function FirstScreen () {
                   <div className='logo-text'>ONYX</div>
                </div>
                <div className='socials-container'>
-                  <img src={facebook} alt='facebook' />
                   <img src={instagram} alt='instagram' />
                   <img src={whatsup} alt='whatsup' />
                </div>

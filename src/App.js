@@ -1,6 +1,7 @@
 import FirstScreen from './components/first-screen';
 import OwlBlock from './components/owl-block';
 import ProductBlockOne from './components/products-block-one';
+import ProductsBlockTwo from './components/products-block-two';
 import Individual from './components/individual';
 import './styles/app-styles.scss';
 
@@ -12,6 +13,7 @@ function App(){
             <OwlBlock />
             <ProductBlockOne />
             <Individual />
+            <ProductsBlockTwo />
          </div>
       </div>
    );
