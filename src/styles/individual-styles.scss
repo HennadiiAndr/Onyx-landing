@@ -10,6 +10,9 @@
    @media(max-width: 520px){
       height: 1850px;
    }
+   @media(max-width: 410px){
+      height: 1490px;
+   }
    .individual-container{
       display: flex;
       width: 100%;
@@ -23,6 +26,9 @@
       }
       @media(max-width: 520px){
          height: 1850px;
+      }
+      @media(max-width: 410px){
+         height: 1490px;
       }
       .individual-image{
          display: flex;
@@ -129,6 +135,7 @@
          @media(max-width: 410px){
             max-width: 380px;
             width: 100%;
+            height: 150px;
          }
       }
       .try-on-block-adaptive{
