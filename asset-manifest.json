@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Onyx-landing/static/css/main.5ab14c28.css",
-    "main.js": "/Onyx-landing/static/js/main.8cdf4d02.js",
+    "main.css": "/Onyx-landing/static/css/main.0737f09d.css",
+    "main.js": "/Onyx-landing/static/js/main.7f432d8c.js",
     "static/media/IMG_7086_1.png": "/Onyx-landing/static/media/IMG_7086_1.0d72c790b0c155b8725b.png",
     "static/media/6940_1.png": "/Onyx-landing/static/media/6940_1.d9b8079cd6ea618462e9.png",
     "static/media/30_1.png": "/Onyx-landing/static/media/30_1.36e15ee54df6c053c7ac.png",
     "static/media/img_2.png": "/Onyx-landing/static/media/img_2.5ef315f6e3779babb542.png",
     "static/media/img_1.png": "/Onyx-landing/static/media/img_1.dc53581ce53881c7265d.png",
     "static/media/Ellipse_8.png": "/Onyx-landing/static/media/Ellipse_8.bfd25b6915fc12951ae1.png",
+    "static/media/Ellipse-7.png": "/Onyx-landing/static/media/Ellipse-7.6f2f3ccdb3bba47a3e08.png",
     "index.html": "/Onyx-landing/index.html",
-    "main.5ab14c28.css.map": "/Onyx-landing/static/css/main.5ab14c28.css.map",
-    "main.8cdf4d02.js.map": "/Onyx-landing/static/js/main.8cdf4d02.js.map"
+    "main.0737f09d.css.map": "/Onyx-landing/static/css/main.0737f09d.css.map",
+    "main.7f432d8c.js.map": "/Onyx-landing/static/js/main.7f432d8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ab14c28.css",
-    "static/js/main.8cdf4d02.js"
+    "static/css/main.0737f09d.css",
+    "static/js/main.7f432d8c.js"
   ]
 }
