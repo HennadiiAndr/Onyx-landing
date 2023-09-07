@@ -4,6 +4,8 @@ import ProductBlockOne from './components/products-block-one';
 import ProductsBlockTwo from './components/products-block-two';
 import Individual from './components/individual';
 import DiscountBlock from './components/discount-block';
+import SubscribeBlock from './components/subscribe-block';
+import Footer from './components/footer';
 import './styles/app-styles.scss';
 
 function App(){
@@ -16,6 +18,8 @@ function App(){
             <Individual />
             <ProductsBlockTwo />
             <DiscountBlock />
+            <SubscribeBlock />
+            <Footer />
          </div>
       </div>
    );
