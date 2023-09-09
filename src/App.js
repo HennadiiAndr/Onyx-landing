@@ -6,19 +6,24 @@ import Individual from './components/individual';
 import DiscountBlock from './components/discount-block';
 import SubscribeBlock from './components/subscribe-block';
 import Footer from './components/footer';
+import Modal from './components/modal';
+import { useState } from 'react';
 import './styles/app-styles.scss';
 
 function App(){
+   const [modalActive, setModalActive] = useState(false);
+
    return (
       <div className="main">
+         <Modal modalActive={modalActive} setModalActive={setModalActive} />
          <div className="mainflow">
             <FirstScreen />
-            <OwlBlock />
+            <OwlBlock setModalActive={setModalActive} />
             <ProductBlockOne />
             <Individual />
             <ProductsBlockTwo />
-            <DiscountBlock />
-            <SubscribeBlock />
+            <DiscountBlock setModalActive={setModalActive} />
+            <SubscribeBlock setModalActive={setModalActive} />
             <Footer />
          </div>
       </div>

@@ -3,7 +3,7 @@ import ellipse1 from '../assets/Ellipse-3.png';
 import ellipse2 from '../assets/Ellipse-4.png';
 import '../styles/discount-block-styles.scss';
 
-function DiscountBlock () {
+function DiscountBlock ({setModalActive}) {
    return (
       <div className='discount-block-wrapper'>
          <div className='discount-block-container'>
@@ -13,7 +13,7 @@ function DiscountBlock () {
                   можно украсить сутажной вышивкой любимое платье, или расшить
                   воротник блузки
                </div>
-               <div className="discount-button">Получить скидку 20%</div>
+               <div className="discount-button" onClick={()=> setModalActive(true)}>Получить скидку 20%</div>
             </div>
          </div>
          <div className='discount-image'>

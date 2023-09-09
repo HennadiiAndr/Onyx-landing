@@ -4,13 +4,13 @@ import ellipseOne from '../assets/ellipse_1.png';
 import ellipseTwo from '../assets/ellipse_2.png';
 import '../styles/owl-block-styles.scss';
 
-function OwlBlock (){
+function OwlBlock ({ setModalActive }){
    return(
       <div className="owl-block-wrapper">
-         <div className='discount-container'>
+         <div className='discount-container' >
             Получи скидку 20% на первый заказ
-            <div className='discount-button'>
-               <div className='button-arrow'>
+            <div className='discount-button' onClick={()=>setModalActive(true)}>
+               <div className='button-arrow' >
                   <img src={arrow} alt='arrow' />
                </div>
             </div>

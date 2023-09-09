@@ -6,7 +6,7 @@ import envelope from '../assets/EnvelopeSimple.png';
 import arrow from '../assets/arrow.png';
 import '../styles/subscribe-block-styles.scss';
 
-function SubscribeBlock () {
+function SubscribeBlock ({ setModalActive }) {
    return(
       <div className='subscribe-block-wrapper'>
          <div className='subscribe-block-container'>
