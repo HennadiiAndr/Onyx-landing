@@ -12,10 +12,21 @@ import './styles/app-styles.scss';
 
 function App(){
    const [modalActive, setModalActive] = useState(false);
-
+   const [isEmailValid, setValidEmail] = useState('');
+   const [isDateValid, setValidDate] = useState('');
+   const [isNameValid, setValidName] = useState(false);
    return (
       <div className="main">
-         <Modal modalActive={modalActive} setModalActive={setModalActive} />
+         <Modal 
+            modalActive={modalActive} 
+            setModalActive={setModalActive}
+            isEmailValid={isEmailValid}
+            setValidEmail={setValidEmail}
+            isDateValid={isDateValid}
+            setValidDate={setValidDate}
+            isNameValid={isNameValid}
+            setValidName={setValidName}
+         />
          <div className="mainflow">
             <FirstScreen />
             <OwlBlock setModalActive={setModalActive} />
