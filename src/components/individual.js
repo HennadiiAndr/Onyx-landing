@@ -1,10 +1,6 @@
-import picOne from '../assets/6940_1.png';
-import picTwo from '../assets/30_1.png';
-import ellipse8 from '../assets/Ellipse_8.png';
-import ellipse9 from '../assets/Ellipse_9.png';
 import '../styles/individual-styles.scss';
 
-function Individual (){
+function Individual ({ imageData }){
    return(
       <div className='individual-wrapper'>
          <div className="individual-container">
@@ -13,7 +9,7 @@ function Individual (){
                Также возможно изготовление на заказ.
             </div>
             <div className="individual-image-two">
-               <img src={picTwo} alt='piece of art' />
+               <img src={`http://localhost:4000/files-list/${imageData[0]}`} alt='piece of art' />
             </div>
             <div className="try-on-block-adaptive">
                <div className="try-text-container">
@@ -23,13 +19,13 @@ function Individual (){
                </div>
             </div>
             <div className="individual-image">
-               <img src={picOne} alt='piece of art' className='pic-one' />
-               <img src={ellipse8} alt='ellipse' className='ellipse8-adaptive' />
-               <img src={ellipse9} alt='ellipse' className='ellipse9-adaptive' />
+               <img src={`http://localhost:4000/files-list/${imageData[1]}`} alt='piece of art' className='pic-one' />
+               <img src={`http://localhost:4000/files-list/${imageData[10]}`} alt='ellipse' className='ellipse8-adaptive' />
+               <img src={`http://localhost:4000/files-list/${imageData[11]}`} alt='ellipse' className='ellipse9-adaptive' />
             </div>
             
-            <img src={ellipse8} alt='ellipse' className='ellipse8' />
-            <img src={ellipse9} alt='ellipse' className='ellipse9' />
+            <img src={`http://localhost:4000/files-list/${imageData[10]}`} alt='ellipse' className='ellipse8' />
+            <img src={`http://localhost:4000/files-list/${imageData[11]}`} alt='ellipse' className='ellipse9' />
          </div>
          <div className="try-on-block">
             <div className="try-text-container">

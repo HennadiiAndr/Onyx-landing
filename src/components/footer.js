@@ -1,22 +1,19 @@
-import ellipse from '../assets/ellipse_1.png';
-import instagram from '../assets/instagram_logo.png';
-import whatsup from '../assets/whatsup_logo.png';
 import '../styles/footer-styles.scss';
 
-function Footer (){
+function Footer ({ imageData }){
    return(
       <div className='footer-wrapper'>
          <div className='header-wrapper'>
             <div className='header-container'>
                <div className='header-logo-container'>
                   <div className='ellipse'>
-                     <img src={ellipse} alt='logo' />
+                     <img src={`http://localhost:4000/files-list/${imageData[7]}`} alt='logo' />
                   </div>
                   <div className='logo-text'>ONYX</div>
                </div>
                <div className='socials-container'>
-                  <img src={instagram} alt='instagram' />
-                  <img src={whatsup} alt='whatsup' />
+                  <img src={`http://localhost:4000/files-list/${imageData[16]}`} alt='instagram' />
+                  <img src={`http://localhost:4000/files-list/${imageData[17]}`} alt='whatsup' />
                </div>
             </div>
          </div>

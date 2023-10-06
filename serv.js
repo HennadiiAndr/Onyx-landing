@@ -8,6 +8,8 @@ const hostname = 'localhost';
 const port = process.env.PORT || 4000;
 
 http.createServer((req,res) =>{
+    let requestedURL = req.url;
+    let imageName = path.basename(requestedURL);
    if(req.url === '/'){
       sendRes ('index.html', 'text/html', res)
    } else if (req.url === '/send-email'){
@@ -23,15 +25,32 @@ http.createServer((req,res) =>{
             let rbody = JSON.parse(body);
             readData(rbody);
             res.end(flag);
-            //rbody = '';
         });
+   } else if(req.url === '/users-list'){
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+        res.setHeader('Access-Control-Max-Age', 2592000); // 30 days
+        let usersList = returnList();
+        res.end(usersList);  
+   } else if(isImageValid(showAllFiles(imagesDir), imageName)){
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+        res.setHeader('Access-Control-Max-Age', 2592000); // 30 days
+        res.setHeader("Content-Type", 'image/png');
+        let image = returnImage(imageName);
+        res.end(image);
+   }else if(req.url === '/files-list'){
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+        res.setHeader('Access-Control-Max-Age', 2592000); // 30 days
+        res.end(JSON.stringify(showAllFiles(imagesDir)));
    } else {
         sendRes (req.url, getContentType(req.url), res);
     }
    
 }).listen(port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
-})
+});
 
 function sendRes(url, contentType, res){
     let file = path.join(__dirname + '/build/', url);
@@ -82,4 +101,29 @@ function dataUpdate (data) {
     fs.writeFileSync('usersData.json',strData, {encoding: "utf8", flag: 'w'});
 }
 
+const returnList = () =>{
+    const data = fs.readFileSync('usersData.json', {encoding: "utf8"});
+    return data;
+};
 
+const imagesDir = './images';
+
+const showAllFiles = (dir) =>{
+    return fs.readdirSync(dir);
+}
+
+//console.log(showAllFiles(imagesDir));
+
+const isImageValid = (imgDir, imgName)=>{
+    const isValid = imgDir.find(image => image === imgName);
+    if(isValid !==undefined){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+const returnImage =(fileName)=>{
+    const showF = fs.readFileSync(`./images/${fileName}`);
+    return showF;
+};
